@@ -1,1 +1,1 @@
-# traveluz
+# Travel.uz by INGROUP
