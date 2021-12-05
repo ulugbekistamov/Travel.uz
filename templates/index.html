@@ -1,0 +1,842 @@
+{% load static %}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Bosh sahifa - Travel.uz</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="{% static 'img/favicon.ico' %}" rel="icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+
+  <link href="{% static 'vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <link href="{% static 'css/style.css'%}" rel="stylesheet ">
+</head>
+
+<body>
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-phone d-flex align-items-center"><span>+998 12 345 67 89</span></i>
+        <i class="bi bi-envelope d-flex align-items-center ms-4"><span>traveluz@gmail.com</span></i>
+      </div>
+
+      <div class="languages d-none d-md-flex align-items-center">
+        <ul>
+          <li>Uz</li>
+          <li><a href="#">Ru</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <header id="header" class="fixed-top d-flex align-items-cente">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0"><a href="{% url 'index' %}">Travel.uz</a></h1>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto" href="">Bosh sahifa</a></li>
+          <li><a class="nav-link scrollto" href="#about">Yurtimiz haqida</a></li>
+          <li><a class="nav-link scrollto" href="#viloyat">Viloyatlar</a></li>
+          <li><a class="nav-link scrollto" href="#tarix">Tarix</a></li>
+          <li><a class="nav-link scrollto" href="#events">Festivallar</a></li>
+          <li><a class="nav-link scrollto" href="#chefs">Mehmonxonalar</a></li>
+          <li><a class="nav-link scrollto" href="#gallery">Galareya</a></li><li class="dropdown"><a href="#"><span>Yanada ko'proq</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+                  <li><a href="{% url 'teatr' %}" class="top-nav-link"><i class="d-flex align-items-center"><span>Teatr va muzeylar</span></i></a></li>
+                  <li> <a href="{% url 'maskan' %}" class="top-nav-link"><i class="d-flex align-items-center ms-4"><span>Dam olish maskanlari</span></i></a></li>
+                  <li><a href="{% url 'restaran' %}" class="top-nav-link"><i class="d-flex align-items-center ms-4"><span>Restoranlar</span></i></a></li>
+                  <li><a href="" class="top-nav-link"><i class="d-flex align-items-center ms-4"><span> Aviachiptalar</span></i></a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Aloqa</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
+      <div class="row">
+        <div class="col-lg-8">
+          <h1><span>O'zbekistonga</span> xush kelibsiz!</h1>
+          <h2>O'zbekiston bo'ylab online sayohat qilmoqchimisiz?</h2>
+
+          <div class="btns">
+            <a href="https://uzbekistan360.uz/" class="btn-menu animated fadeInUp scrollto">Ketdik..</a>
+            <a href="#about" class="btn-book animated fadeInUp scrollto">Batafsil</a>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
+          <a href="https://www.youtube.com/watch?v=diXu6Sypgbs" class="glightbox play-btn"></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
+            <div class="about-img">
+              <img src="{% static 'img/samarkand.jpg' %}" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <h3>O'zbekiston haqida bilarmidingiz?</h3>
+            <p class="fst">
+              O'zbekiston haqida kam ma'lumotga egamisiz? Unda buni o'qing.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> Markaziy Osiyoning markaziy qismida joylashgan mamlakat.</li>
+              <li><i class="bi bi-check-circle"></i> Oʻzbekistonning poytaxti — Toshkent shahri.</li>
+              <li><i class="bi bi-check-circle"></i> Davlat tili - O'zbek tilidir.</li>
+            </ul>
+            <p> Oʻzbekiston Respublikasi 12 ta viloyat, Toshkent shahri va Qoraqalpogʻiston Respublikasidan iboratdir. Shuningdek, Davlat mustaqil, demokratik, dunyoviy va konstitutsiyaviy davlat ham hisoblanadi. Oʻzbekiston MDH, BMT, YXHT va SHHT aʼzosidir. Oʻzbekiston qirgʻoqqa ega boʻlmagan besh mamlakat bilan, yaʼni: shimoldan Qozogʻiston; shimoli-sharqdan Qirgʻiziston; janubi-sharqdan Tojikiston; janubdan Afgʻoniston; va janubi-gʻarbiy qismida Turkmaniston bilan chegaradosh.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="why-us" class="why-us">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Siz uchun!</h2>
+          <p>Aniq ma'lumotlar</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4">
+            <div class="box" data-aos="zoom-in" data-aos-delay="100">
+              <span>01</span>
+              <h4>Maydoni</h4>
+              <p>448,978 km²</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box" data-aos="zoom-in" data-aos-delay="200">
+              <span>02</span>
+              <h4>Aholisi</h4>
+              <p>34,558.9 mln kishi.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box" data-aos="zoom-in" data-aos-delay="300">
+              <span>03</span>
+              <h4> Pul birligi</h4>
+              <p>O'zbek so'mi (So'm)</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="viloyat" class="menu section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Viloyatlar</h2>
+          <p>O'zbekistondagi viloyatlar haqida</p>
+        </div>
+
+        <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-6 menu-item filter-starters">
+            <img src="{% static 'img/andijan2.jpg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="{% url 'viloyat' %}">Andijon viloyati</a>
+            </div>
+            <div class="menu-ingredients">
+              Markazi: Andijon shahri<br>
+              Maydoni: 4,200 km² | Aholisi: 1,899,000 kishi
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-specialty">
+            <img src="{% static 'img/buxoro.jpg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Buxoro viloyati</a>
+            </div>
+            <div class="menu-ingredients">
+              Markazi: Buxoro shahri<br>
+              Maydoni: 39,400 km² | Aholisi: 1,384,700 kishi
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-starters">
+            <img src="{% static 'img/ferghana.jpg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Farg'ona viloyati</a>
+            </div>
+            <div class="menu-ingredients">
+              Markazi: Farg'ona shahri<br>
+              Maydoni: 6,800 km² | Aholisi: 2,597,000 kishi
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-salads">
+            <img src="{% static 'img/namangan.jpg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Namangan viloyati</a>
+            </div>
+            <div class="menu-ingredients">
+              Markazi: Namangan shahri<br>
+              Maydoni: 7,900 km² | Aholisi: 1,862,000 kishi
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-specialty">
+            <img src="{% static 'img/toshkent.jpg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Toshkent viloyati</a>
+            </div>
+            <div class="menu-ingredients">
+              Markazi: Toshkent shahri<br>
+             Maydoni: 15,300 km² | Aholisi: 4,450,000 kishi
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-starters">
+            <img src="{% static 'img/sirdaryo.jpg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Sirdaryo viloyati</a>
+            </div>
+            <div class="menu-ingredients">
+              Markazi: Guliston shahri<br>
+              Maydoni: 5,100 km² | Aholisi: 648,100 kishi
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-specialty">
+            <img src="{% static 'img/djizzakh.jpg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Jizzax viloyati</a>
+            </div>
+            <div class="menu-ingredients">
+              Markazi: Jizzax shahri<br>
+              Maydoni: 20,500 km² | Aholisi: 910,500 kishi
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-salads">
+            <img src="{% static 'img/registon.jpg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Samarqand viloyati</a>
+            </div>
+            <div class="menu-ingredients">
+              Markazi: Samarqand shahri<br>
+              Maydoni: 16,400 km² | Aholisi: 2,322,000 kishi
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-salads">
+            <img src="{% static 'img/navoi.jpg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Navoiy viloyati</a>
+            </div>
+            <div class="menu-ingredients">
+              Markazi: Navoiy shahri<br>
+              Maydoni: 110,800 km² | Aholisi: 767,500 kishi
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-specialty">
+            <img src="{% static 'img/surxondaryo.jpg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Surxondaryo viloyati</a>
+            </div>
+            <div class="menu-ingredients">
+              Markazi: Termiz shahri<br>
+              Maydoni: 20,800 km² | Aholisi: 1,676,000 kishi
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-specialty">
+            <img src="{% static 'img/qashqadaryo.jpeg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Qashqadaryo viloyati</a>
+            </div>
+            <div class="menu-ingredients">
+              Markazi: Qarshi shahri<br>
+              Maydoni: 28,400 km² | Aholisi: 2,029,000 kishi
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-specialty">
+            <img src="{% static 'img/khiva.jpg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Xorazm viloyati</a>
+            </div>
+            <div class="menu-ingredients">
+              Markazi: Urganch shahri<br>
+              Maydoni: 6,300 km² | Aholisi: 1,200,000 kishi
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-specialty">
+            <img src="{% static 'img/nukus.jpg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Qoraqalpog'iston Respublikasi</a>
+            </div>
+            <div class="menu-ingredients">
+              Markazi: Nukus shahri<br>
+              Maydoni: 160,000 km² | Aholisi: 1,200,000 kishi
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="tarix" class="specials">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Tarix</h2>
+          <p>O'zbekiston tarixi</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Oʻzbek xonliklari</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Oʻzbekiston SSSR tarkibida</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Oʻzbekiston Sharof Rashidov davrida</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">O'zbekiston 1983-1991-yillarda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Mustaqil Oʻzbekiston</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Oʻzbek xonliklari</h3>
+                    <p>1500-yilda Movarounnahrda Shayboniylar hukmronligi oʻrnatiladi. 1533-yilda davlat poytaxti Samarqanddan Buxoroga koʻchirilgandan soʻng mamlakat Buxoro xonligi nomi bilan mashhur boʻladi.</p>
+                    <p>1785—1920-yillar oraligʻida davlat nomi Buxoro amirligi deb yuritilsada, yevropaliklar tomonidan, anʼanaviy ravishda, Buxoro xonligi deb ham atalishda davom etadi.</p>
+                    <p>Arabshoxiylar sulolasining eng yirik vakili Abulgʻoziy Bahodirxon boʻlgan. Uning davrida markaziy hokimiyat mustahkamlandi va Xivaga mutlaq poytaxt maqomi berildi. Shundan keyin mamlakat yozma manbalarda Xiva xonligi nomi bilan zikr etiladi, ammo rasmiy hujjat va zarb qilingan tangalarda Xorazm nomi yoziladi.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'img/navoi.jpg' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-2">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Oʻzbekiston SSSR tarkibida</h3>
+                    <p>1923-yildan 1929-yilgacha guberniyalar oʻrnida oʻlkalar va viloyatlar (SSJI davrida yozilgan barcha oʻzbek tilidagi rasmiy hujjatlarda „viloyat“ soʻzi „oblast“ tarzida, „tuman“ soʻzi „rayon“ tarzida uchraydi), volostlar va uyezdlar oʻrniga tumanlar tashkil qilindi. Boshqaruv ishini yengillashtirish maqsadida viloyatlar muntazam ravishda boʻlinib borildi. Oʻrta Osiyodagi respublikalar ham milliy yoki diniy qarashlardan kelib chiqib boʻlindi.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'img/qashqadaryo.jpeg' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-3">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>O'zbekiston Sharof Rashidov davrida</h3>
+                    <p>1950-yil 21-avgustdan OʻzSSR Raisligiga Sharof Rashidovich Rashidov (24.10 (06.11).1917 — 31.10.1983) tayinlandi va umrining oxirigacha oʻz lavozimida qoldi. Sharof Rashidov tomonidan mamlakat rahbarligi davrida Oʻzbekistonning yutuqlari: 1977-yilda Toshkentda Markaziy Osiyoda birinchi metro qurildi. 1967-yilda Markaziy Osiyoda eng yirik oltin koni topildi. Markaziy Osiyoda birinchi marta Samarqandda Arxeologiya institutiga asos solindi. Tarixda birinchi marta Mirzo Ulugʻbekka yodgorlik oʻrnatildi. Samarqandning tashkil topishi tarixi muzeyi tashkil etildi. 4 jildli Oʻzbekiston tarixi yozildi va nashr etildi. Sh.Rashidov vafotidan soʻng, Oʻzbekistonning koʻp jildli tarixi nashr etilmagan. Birinchi marta Alisher Navoiy haqida oʻn qismli videofilm suratga olindi. Mirzo Ulugʻbek haqida birinchi marta ikkita film suratga olindi. Abu Rayxon Biruniy, Ibn Sino, Hamza haqida filmlar suratga olingan. Markaziy Osiyoda birinchi marta 14 jildli milliy entsiklopediya nashr etildi.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'img/khiva.jpg' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-4">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>O'zbekiston 1983-1991-yillarda</h3>
+                    <p>Ammo, shuni ham taʼkidlash joizki, rasman respublika boshliqlari 1959-yildan to 1970-yilgacha Yodgor Sodiqovna Nasriddinova (26.12.1920), 1970-78-yillarda Nazar Matkarimovich Matchonov (01.01.1923), 1978-83-yillarda Inomjon Buzrukovich Usmonxoʻjayev (21.05.1930) boʻlishgan. Rasmiy Moskva tomonidan uyushtirilgan, Gdlyan va Ivanovlar tomonidan olib borilgan „tozalash ishlari“ natijasida mamlakatning keyingi boshliqlari tez-tez almashtirib turildi. 1990-yil 24 martda Oʻzbekiston SSR prezidenti lavozimiga tantanali ravishda Islom Abdugʻaniyevich Karimov keldi va oʻzbek xalqini yangi gʻoya — mustaqillik sari intilishga undadi. </p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'img/travel.jpg' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-5">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Mustaqil Oʻzbekiston</h3>
+                    <p>1991-yil SSSR boʻlinib ketishi oqibatida mustaqil Oʻzbekiston Respublikasi vujudga keldi. Islom Karimov Oʻzbekiston Respublikasining prezidenti etib saylandi. Turli islomiy radikallar jumhuriyat tepasiga chiqishga urinib koʻrishdi, ammo barcha harakatlari besamar ketdi, 1999-yil ushbu radikallar terroristik harakatlarni boshlashdi. Respublika rahbarining oqilona harakatlari natijasida koʻplab teraktlarning oldi olindi. Oʻzbekiston bayrogi pochta markasida Oʻzbekiston tamgʻasi, 1992-yil. Oʻzbek shoiri Alisher Navoiyga xaykal, Toshkent 1991-yil
+                    Oʻzbekistonning Birinchi prezidenti davrida mamlakat oʻz bayrogʻiga (1991), tamgʻasi (1992), konstitutsiyasiga (1992) ega boʻldi. Sovet tuzumi oʻrniga hokimlar va mahalla instituti bilan yangi maʻmuriy tizim yaratildi.
+                    1996-yilda Prezident Islom Karimov tashabbusi bilan Amir Temur tavalludining 660 yilligi munosabati bilan Temuriylar tarixi davlat muzeyi ochildi. 2007-2011-yillarda "Temuriylar davri yozma yodgorliklarini Oʻzbekistonda va undan tashqarida oʻrganish" fundamental tadqiqot loyihasi amalga oshirildi, uning doirasida Amir Temur va temuriylar davri qoʻlyozmalariga oid boshqa mamlakatlarda saqlangan materiallar va maʼlumotlar toʻplandi.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'img/t-city.jpeg' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+   
+    <section id="events" class="events">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Festivallar</h2>
+          <p>Yurtimizda o'tkaziladigan festivallar</p>
+        </div>
+
+        <div class="events-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="{% static 'img/festival.jpg' %}" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Festivallar</h3>
+                  <div class="price">
+                    <p><span>Xalqaro musiqa festivallari</span></p>
+                  </div>
+                  <ul>
+                    <li><i class="bi bi-check-circle"></i> Sharq taronalari Xalqaro musiqa festivali. Samarqand viloyatida, har 2 yilda bir marta o'tkaziladi.</li>
+                    <li><i class="bi bi-check-circle"></i> Dunyo sadolari xalqaro musiqa festivali. Andijon viloyati Xonobod shahrida, har 2 yilda bir marta o'tkaziladi.</li>
+                    <li><i class="bi bi-check-circle"></i> Oltin kuz xalqaro simfonik musiqa festivali. Toshkent shahrida, har 2 yilda bir marta o'tkaziladi.</li>
+                    <li><i class="bi bi-check-circle"></i> Lazgi xalqaro raqs festivali. Xorazm viloyati Xiva shahrida, har 2 yilda bir marta.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="{% static 'img/madaniyat.jpg' %}" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Festivallar</h3>
+                  <div class="price">
+                    <p><span>Madaniyat festivallari</span></p>
+                  </div>
+                  <ul>
+                    <li><i class="bi bi-check-circle"></i> Xalqaro baxshichilik festivali. Termiz shahrida, har 2 yilda o'tkaziladi.</li>
+                    <li><i class="bi bi-check-circle"></i> Xalqaro maqom san'ati anjumani. Qashqadaryo viloyatida, har 2 yilda bir marta o'tkaziladi.</li>
+                    <li><i class="bi bi-check-circle"></i> Xalqaro sirk san'ati festivali. Toshkent shahrida, har 2 yilda bir marta o'tkaziladi.</li>
+                    <li><i class="bi bi-check-circle"></i> Opera va balet san'ati festivali. Toshkent shahrida, har 2 yilda bir marta o'tkaziladi.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Fikrlar</h2>
+          <p>Insonlarning loyihamiz haqida fikrlari</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Ushbu sayt orqali O'zbekiston haqida ko'p ma'lumotlarni bilib oldim! Shunchaki ajoyib!
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="{% static 'img/testimonials/testimonials-1.jpg' %}" class="testimonial-img" alt="">
+                <h3>Jahongir Murodboev</h3>
+                <h4>CEO &amp; Founder</h4>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  O'zbekiston haqida o'zimga kerakli bo'lgan ma'lumotlarni ushbu saytdan oldim. Rahmat!
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="{% static 'img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt="">
+                <h3>Azizbek Ashuraliev</h3>
+                <h4>Dasturchi</h4>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Saytda O'zbekiston haqida juda ham kerakli va umumiy ma'lumotlar bor ekan! Bu juda ham zo'r!
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="{% static 'img/testimonials/testimonials-5.jpg' %}" class="testimonial-img" alt="">
+                <h3>Ulug'bek Istamov</h3>
+                <h4>Dasturchi va Dizayner</h4>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Galareya</h2>
+          <p>O'zbekistonimizning go'zal fotosuratlari!</p>
+        </div>
+      </div>
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-0">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'img/background.jpg' %}" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="{% static 'img/background.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'img/background3.jpg' %}" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="{% static 'img/background3.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'img/bg2.jpg' %}" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="{% static 'img/bg2.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'img/bukhara.jpg' %}" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="{% static 'img/bukhara.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'img/buxoro.jpg' %}" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="{% static 'img/buxoro.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'img/ferghana.jpg' %}" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="{% static 'img/ferghana.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'img/khiva.jpg' %}" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="{% static 'img/khiva.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'img/hotel.jpg' %}" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="{% static 'img/hotel.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="chefs" class="chefs">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Mehmonxonalar</h2>
+          <p>O'zbekistondagi mehmonxonalar</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+              <img src="{% static 'img/t-city.jpeg' %}" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Hilton Tashkent</h4>
+                  <span>Toshkent</span>
+                </div>
+                <div class="social">
+                  <a href="hotel-main.html">Batafsil..</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="200">
+              <img src="{% static 'img/hotel2.jpg' %}" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>International Hotel Uzbekistan</h4>
+                  <span>Toshkent</span>
+                </div>
+                <div class="social">
+                  <a href="hotel-main.html">Batafsil..</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="300">
+              <img src="{% static 'img/volida.webp' %}" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Volida Hotel</h4>
+                  <span>Xiva</span>
+                </div>
+                <div class="social">
+                  <a href="hotel-main.html">Batafsil..</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="pt-5 text-center">
+          <a href="{% url 'hotel' %}"><h5>Barchasi...</h5></a>
+        </div>
+        
+
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Aloqa</h2>
+          <p>Biz bilan suhbatlashmoqchimisiz?</p>
+        </div>
+      </div>
+
+      <div data-aos="fade-up">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12325088.464665204!2d55.57212315492988!3d41.0459306676264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b20a5d676b1%3A0xca0a6dad7e841e20!2sUzbekistan!5e0!3m2!1sen!2sbg!4v1638551191179!5m2!1sen!2sbg" style="border:0; width: 100%; height: 350px;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Joylashuv:</h4>
+                <p>O'zbekiston, Markaziy Osiyo</p>
+              </div>
+
+              <div class="open-hours">
+                <i class="bi bi-clock"></i>
+                <h4>Vaqtlar:</h4>
+                <p>
+                  Xohlagan vaqtingiz<br/>
+                  siz bilanmiz!
+                </p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>traveluzofficial@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Telefon:</h4>
+                <p>+998 99 118-06-20</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Ismingiz" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email manzilingiz" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Suhbat nima haqida?" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="8" placeholder="Xabar" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Yuklanmoqda..</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Sizning xabaringiz yuborildi! Rahmat!</div>
+              </div>
+              <div class="text-center"><button type="submit">Yuborish</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Travel.uz</h3>
+              <p>
+                O'zbekiston bo'ylab online sayohat!<br><br>
+                <strong>Telefon:</strong> +998 99 118-06-20<br>
+                <strong>Email:</strong> traveluzofficial@gmail.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="https://t.me/traveluzofficial" class="twitter"><i class="bx bxl-telegram"></i></a>
+                <a href="https://facebook.com/traveluzofficial" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://instagram.com/traveluzofficial" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCZxoeXZ4qk17dS62qJg8Yug" class="google-plus"><i class="bx bxl-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Havolalar</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Bosh sahifa</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Yurtimiz haqida</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Tarix</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Mehmonxonalar</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Restoranlar</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>ㅤ</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Obidalar</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Shaharlar</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Galareya</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Aloqa</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Yangiliklar</h4>
+            <p>Yangiliklardan xabardor bo'lish uchun emailingizni kiriting!</p>
+            <form action="" method="post">
+              <input type="email" name="email" placeholder="Email"><input type="submit" value="Yuborish">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright | All rights reserved! <strong><span>Travel.uz</span> by <a href="https://instagram.com/ingroup_uz">INGROUP</a></strong> 
+      </div>
+    </div>
+  </footer>
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+
+  <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
